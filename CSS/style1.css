@@ -1,0 +1,207 @@
+
+body{
+font-family: 'Dancing Script', cursive;
+background:  #02010a;
+padding-left: 15%;
+padding-right: 15%;
+}
+header {
+  padding: 0.5%;
+  background: #5b7989;
+  border-radius: 10px 10px 0 0;
+}
+#menu{
+  display: flex;
+  flex-direction: row;
+}
+h1{
+  width: 50%;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  text-align: left;
+}
+h2{
+  width: 50%;
+  text-align: right;
+}
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer{
+  background: #C6d5c5;
+  padding: 0.5%;
+  border-radius: 0 0 10px 10px;
+}
+#piedepagina{
+  display: flex;
+  flex-direction: row;
+  font-size: 120%;
+}
+.contacto{
+  width: 25%;
+  margin: 2%;
+}
+.terminos{
+  width: 25%;
+  margin: 2%;
+
+}
+.redes{
+  width: 25%;
+  margin: 2%;
+  text-align: center;
+}
+.derechos{
+  width: 25%;
+  margin: 2%;
+  text-align: center;
+}
+
+#contenedor{
+  background: #d5c75f;
+  float: left;
+}
+#superior{
+  height: 50%;
+  display: flex;
+}
+#inferior{
+  height: 50%;
+  display: flex;
+}
+div [class^="paisajes"]{
+  width: 33.33%;
+  }
+
+img[src^="Imagenes/p"]{
+  max-width: 90%;
+  margin: auto;
+  display: block;
+  padding: 5%;
+
+}
+
+.paisajes1 img{
+  -webkit-filter:blur(10px);
+    filter: blur(10px);
+
+}
+.paisajes2 img{
+  -webkit-filter:grayscale(100%);
+    filter: grayscale(100%);
+    box-shadow:  #02010a;
+}
+.paisajes4 img{
+  -webkit-filter:grayscale(100%);
+    filter: grayscale(100%);
+}
+.paisajes6 img{
+  -webkit-filter:grayscale(100%);
+    filter: grayscale(100%);
+}
+.paisajes3 img{
+  -webkit-filter:sepia(90%)
+}
+
+@media screen and (min-width:960px) {
+  body{
+    width: 900px;
+  }
+}
+@media screen and (min-width:690px) and (max-width:960px){
+  body{
+    width: 100%;
+    display: inline;
+  }
+}
+@media screen and (max-width:689px) {
+  body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  header{
+    width: 100%;
+  }
+  #menu{
+    width: 100%;
+    flex-direction: column;
+  }
+  h1{
+    width: 100%;
+    text-align: center;
+  }
+  h2{
+    width: 100%;
+    text-align: center;
+  }
+  #contenedor{
+    width: 100%;
+      }
+#superior{
+  width: 100%;
+  display: inline;
+}
+
+#inferior{
+  width: 100%;
+  display: inline;
+}
+
+#piedepagina{
+  flex-direction: column;
+  text-align: center;
+}
+
+div [class^="paisajes"]{
+  width: 100%;
+  }
+
+img[src^="Imagenes/p"]{
+  max-width: 80%;
+  margin: auto;
+  display: block;
+  padding: 5%;
+}
+.contacto{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.terminos{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.redes{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.derechos{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.redes img{
+  width: 7%;
+}
+}
+header {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+    }

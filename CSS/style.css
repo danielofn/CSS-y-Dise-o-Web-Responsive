@@ -1,0 +1,242 @@
+
+body{
+font-family: 'Dancing Script', cursive;
+background:  #02010a;
+padding-left: 15%;
+padding-right: 15%;
+}
+
+
+header {
+  background: #5b7989;
+  padding: 0.5%;
+}
+
+#menu{
+  background: #5b7989;
+  display: flex;
+  flex-direction: row;
+  border-radius: 2px 2px 0 0;
+}
+h1{
+  width: 50%;
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+  text-align: left;
+}
+
+h2{
+  width: 48%;
+  text-align: right;
+  font-size: 120%;
+}
+
+.imagencentral{
+  background: #82c3a6;
+  }
+
+.imagencentral img{
+  width: 50%;
+  display: block;
+  margin: auto;
+  box-shadow: 2px 2px #02010a;
+    }
+
+
+.imagensecundaria{
+  background: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-direction: row;
+}
+.img1{
+  width: 45%;
+  padding: 2%;
+  text-align: center;
+  font-size: 120%;
+}
+
+.img1 img{
+    width: 90%;
+    display: block;
+    margin: auto;
+    box-shadow: 2px 2px #82c3a6;
+    border: solid 0px;
+    transition: border 4s;
+    transition: rotate 4s;
+    transition: box-shadow 4s;
+}
+.img1 img:hover{
+  border: solid 2px;
+  transform: rotate(10deg);
+  box-shadow: none;
+}
+
+.img2{
+  width: 45%;
+  padding: 2%;
+  text-align: center;
+  font-size: 120%;
+}
+.img2 img{
+    width: 90%;
+    display: block;
+    margin: auto;
+    box-shadow: 2px 2px #82c3a6;
+    border: solid 0px;
+    transition: border 4s;
+    transition: translate 4s;
+    transition: box-shadow 4s;
+  }
+
+  .img2 img:hover{
+    border: solid 2px;
+    transform: translate(5px, -20px);
+    box-shadow: none;
+  }
+
+
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer{
+  background: #C6d5c5;
+  padding: 0.5%;
+  border-radius: 0 0 4px 4px;
+}
+#piedepagina{
+  display: flex;
+  flex-direction: row;
+  font-size: 120%;
+}
+.contacto{
+  width: 25%;
+  margin: 2%;
+}
+.terminos{
+  width: 25%;
+  margin: 2%;
+
+}
+.redes{
+  width: 25%;
+  margin: 2%;
+  text-align: center;
+}
+.derechos{
+  width: 25%;
+  margin: 2%;
+  text-align: center;
+}
+@media screen and (min-width:960px) {
+  body{
+    width: 900px;
+  }
+}
+
+@media screen and (min-width:690px) and (max-width:960px){
+  body{
+    width: 100%;
+    display: inline;
+  }
+
+}
+
+@media screen and (max-width:689px) {
+  body{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  header{
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  #menu{
+    width: 100%;
+    flex-direction: column;
+  }
+  h1{
+    width: 100%;
+    text-align: center;
+  }
+  h2{
+    width: 100%;
+    text-align: center;
+  }
+  #contenedor{
+    width: 100%;
+  }
+  .imagencentral{
+    width: 100%;
+
+  }
+  .imagencentral img{
+    width: 80%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+.imagensecundaria{
+  flex-direction: column;
+}
+  .img1 {
+    width: 100%;
+    padding: 0px;
+    padding-top: 2%;
+  }
+  .img2 {
+    width: 100%;
+    padding: 0px;
+  }
+  .img1 img{
+      width: 80%;
+    }
+  .img2 img{
+      width: 80%;
+    }
+#piedepagina{
+  flex-direction: column;
+  text-align: center;
+  padding: 0px;
+}
+.contacto{
+  width: 100%;
+  margin: 0px;
+}
+.terminos{
+  width: 100%;
+  margin: 0px;
+}
+.redes{
+  width: 100%;
+  margin: 0px;
+}
+.derechos{
+  width: 100%;
+  margin: 0px;
+}
+.redes img{
+  width: 7%;
+}
+}
+
+header {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 0%;
+  }
+    }
